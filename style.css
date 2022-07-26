@@ -1,0 +1,12 @@
+a,
+ol,
+li {
+    background-color: black;
+    color: white;
+    font-family: sans-serif bold;
+}
+
+a:hover {
+    background-color: orange;
+    color: black;
+}
