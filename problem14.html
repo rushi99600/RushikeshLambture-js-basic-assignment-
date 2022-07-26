@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <b>Hello <i>Board Infinity</i> this index file contains all the hyperlinks of this Js Basic Programming project
+    Questions</b>
+    <ol type="1">
+
+        <li><a href="problem15.html">Problem 15 </a></li>
+
+    </ol>
+    //problem14 solution //Print the array as mentioned.
+    <script>
+        function leftRotateArray(arr, k) {
+            let temp = [];
+            for (let i = 0; i < k; i++) {
+                temp.push(arr.shift());
+            }
+            arr = arr.concat(temp);
+            return arr;
+        }
+        arr = [1, 2, 3, 4, 5, 6, 7]
+        let ans = leftRotateArray(arr, 3);
+
+        console.log("array as mentioned:" + (ans));
+    </script>
+</body>
+
+</html>
