@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <b>Hello <i>Board Infinity</i> this index file contains all the hyperlinks of this Js Basic Programming project
+    Questions</b>
+    <ol type="1">
+
+        <li><a href="problem12.html">Problem 12 </a></li>
+
+    </ol>
+    <script>
+        function freqSorting(numArr, freqArr) {
+            let m = -1
+            let ind = -1
+            for (i = 0; i < freqArr.length; i++) {
+                if (m < freqArr[i]) {
+                    m = freqArr[i]
+                    ind = i
+                }
+            }
+            console.log(numArr[ind])
+            freqArr.splice(ind, 1)
+            numArr.splice(ind, 1)
+        }
+
+        let arr = [1, 2, 2, 2, 3, 4, 2, 1, 4, 1]
+        let n = 10
+        let numArr = []
+        let freqArr = []
+        for (i = 0; i < n; i++) {
+            count = 0
+            if (numArr.indexOf(arr[i]) == -1) {
+                numArr.push(arr[i])
+                count = 1
+                for (j = i + 1; j < n; j++) {
+                    if (arr[j] == arr[i]) {
+                        count = count + 1
+                    }
+                }
+                freqArr.push(count)
+            }
+        }
+        console.log(numArr, freqArr)
+        while (numArr.length > 0) {
+            freqSorting(numArr, freqArr)
+        }
+    </script>
+</body>
+
+</html>
